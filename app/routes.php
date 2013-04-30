@@ -13,5 +13,7 @@
 
 Route::get('/', function()
 {
+	Api::getEtsyOAuth();
+	
 	return View::make('hello');
 });
